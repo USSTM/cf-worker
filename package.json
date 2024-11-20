@@ -1,0 +1,24 @@
+{
+  "name": "usstm-worker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.5.2",
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "@types/common-tags": "^1.8.4",
+    "typescript": "^5.5.2",
+    "vitest": "2.0.5",
+    "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.2",
+    "postmark": "^4.0.5"
+  }
+}
